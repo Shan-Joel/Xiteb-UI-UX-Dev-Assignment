@@ -9,16 +9,93 @@
       <title>Xiteb Hotels Pvt Ltd</title>
    </head>
    <body>
+      <header class="header">
+         <div class="row-1-container">
+            <div class="container">
+               <div class="row-1">
+                  <div class="flex-item-1">
+                     <img class="logo" src="./assets/images/xiteb-logo-new.png" alt="Xiteb" />
+                  </div>
+                  <div class="flex-item-2">
+                     <ul>
+                        <li>
+                           <a href="#"> <i class="fa-regular fa-user"></i> Sign In</a>
+                           <a href="#">Join Now</a>
+                           <a href="#">Find Reservations</a>
+                           <a href="#"> <i class="fa-solid fa-globe"></i> English</a>
+                           <a href="#">LKR</a>
+                           <a href="#"><i class="fa-solid fa-mobile"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row-2-container">
+            <div class="container">
+               <div class="row-2">
+                  <div class="flex-item-1">
+                     <ul>
+                        <li>
+                           <div>
+                              <a href="#">About</a>
+                              <a href="#">Rooms & Suites</a>
+                              <a href="#">Dining</a>
+                              <a href="#">Experience</a>
+                              <a href="#">Events</a>
+                              <a href="#">Gallery</a>
+                              <a href="#">Offers</a>
+                              <a href="#">More</a>
+                           </div>
+                           <div class="book-hotel">
+                              <a href="#">Find A Hotel</a>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row-3-container">
+            <div class="container">
+               <p>
+                  ANNOUNCEMENT: Our commitment to you.
+                  <span> More</span>
+               </p>
+            </div>
+         </div>
+         <div class="row-4-container">
+            <div class="slider">
+               <div class="container slider-content-flex">
+                  <h1 class="slider-title">Xiteb Hotels Colombo</h1>
+                  <p class="slider-para">A personal tropical sanctuary set within the heart of the city</p>
+               </div>
+            </div>
+         </div>
+      </header>
       <section class="destination-sec">
          <div class="container">
             <h2>Our Destinations</h2>
             <div class="destination-box">
-               <select name="destinations" id="destinations">
-                  <option value="Habarana Village by Cinnamon" selected>Habarana Village by Cinnamon</option>
-                  <option value="Cinnamon Velifushi Maldives">Cinnamon Velifushi Maldives</option>
-                  <option value="Cinnamon Dhonveli Maldives">Cinnamon Dhonveli Maldives</option>
-                  <option value="Cinnamon Hakuraa Huraa Maldives">Cinnamon Hakuraa Huraa Maldives</option>
-               </select>
+               <div class="destination-dropdown">
+                  <input type="text" class="selected-value" placeholder="Habarana Village by Cinnamon" />
+                  <span class="destination-select-arrow">
+                     <i class="fa-solid fa-angle-down"></i>
+                  </span>
+               </div>
+               <div class="rest-of-the-options">
+                  <div onclick="show('Cinnamon Velifushi Maldives')" class="other-selected-value">Cinnamon Velifushi Maldives</div>
+                  <div onclick="show('Cinnamon Life')" class="other-selected-value">Cinnamon Life</div>
+                  <div onclick="show('Cinnamon Grand Colombo')" class="other-selected-value">Cinnamon Grand Colombo</div>
+                  <div onclick="show('Cinnamon Lakeside Colombo')" class="other-selected-value">Cinnamon Lakeside Colombo</div>
+                  <div onclick="show('Cinnamon Red Colombo')" class="other-selected-value">Cinnamon Red Colombo</div>
+                  <div onclick="show('Cinnamon Bentota Beach')" class="other-selected-value">Cinnamon Bentota Beach</div>
+                  <div onclick="show('Cinnamon Bey Beruwala')" class="other-selected-value">Cinnamon Bey Beruwala</div>
+                  <div onclick="show('Hikka Tranz by Cinnamon')" class="other-selected-value">Hikka Tranz by Cinnamon</div>
+                  <div onclick="show('Cinnamon Wild Yala')" class="other-selected-value">Cinnamon Wild Yala</div>
+                  <div onclick="show('Trinco Blu by Cinnamon')" class="other-selected-value">Trinco Blu by Cinnamon</div>
+                  <div onclick="show('Cinnamon Citadel Kandy')" class="other-selected-value">Cinnamon Citadel Kandy</div>
+               </div>
                <div class="destination-image-box">
                   <div class="discover-more-details">
                      <div class="flex-item-1">
@@ -120,7 +197,7 @@
             </div>
          </div>
       </section>
-      <footer>
+      <footer class="footer">
          <div class="container">
             <div class="footer-wrapper">
                <div class="col-1">
