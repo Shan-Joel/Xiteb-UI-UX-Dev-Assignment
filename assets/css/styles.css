@@ -117,6 +117,16 @@ header .row-3-container {
    font-size: 14px;
    width: 100%;
    padding: 10px 0;
+   transition: all 0.7s ease-in;
+   position: relative;
+}
+
+header .row-3-container .fa-xmark {
+   position: absolute;
+   right: 2%;
+   top: 17%;
+   font-size: 25px;
+   cursor: pointer;
 }
 
 header .row-3-container span {
@@ -137,7 +147,7 @@ header .row-4-container .slider-content-flex {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   height: 50vh;
+   height: 55vh;
 }
 
 header .row-4-container .slider-content-flex h1 {
@@ -152,6 +162,60 @@ header .row-4-container .slider-content-flex p {
    font-size: 20px;
    font-weight: 600;
    font-family: var(--poppins-font);
+}
+
+header .row-4-container .search-box {
+   display: flex;
+   color: #000;
+   background-color: hsla(0, 0%, 100%, 0.6);
+   padding: 9px 10px;
+   font-size: 16px;
+}
+
+header .row-4-container .search-box .search-item-1,
+header .row-4-container .search-box .search-item-2,
+header .row-4-container .search-box .search-item-3,
+header .row-4-container .search-box .search-item-4 {
+   display: flex;
+   gap: 30px;
+   align-items: center;
+   height: 100%;
+   padding: 10px 20px;
+   background-color: #fff;
+   cursor: pointer;
+}
+
+header .row-4-container .search-box .search-item-1 {
+   margin-right: 10px;
+   padding-right: 9%;
+}
+
+header .row-4-container .search-box .search-item-1 label {
+   position: relative;
+   display: inline-block;
+   padding: 0 5px;
+   height: 24px;
+   line-height: 24px;
+   background-color: #f8f8f8;
+   color: #666;
+   font-size: 12px;
+   border-radius: 100px;
+   text-align: center;
+}
+
+header .row-4-container .search-box .search-item-2 {
+   margin-right: 10px;
+}
+
+header .row-4-container .search-box .search-item-3 {
+   margin-right: 10px;
+}
+
+header .row-4-container .search-box .search-item-4 {
+   background: #a68a3a;
+   color: #fff;
+   font-weight: 600;
+   padding: 10px 30px;
 }
 
 /* destination */
@@ -289,11 +353,14 @@ header .row-4-container .slider-content-flex p {
    max-width: 585px;
    max-height: 330px;
    overflow-y: scroll;
-   transition: display 0.5s ease-in;
+   transition: display 2s ease-in-out;
+   -webkit-transition: display 2s ease-in-out;
+   opacity: 0;
 }
 
 .dropdown-display-block {
    display: block !important;
+   opacity: 1 !important;
 }
 
 /* hilton section */
@@ -580,4 +647,15 @@ footer {
    background: url('/assets/images/footer-bg.png') bottom center no-repeat;
    padding-bottom: 230px;
    background-size: contain;
+}
+
+/* laptop responsive */
+@media screen and (max-width: 1600px) {
+   header .row-4-container .slider {
+      height: 540px;
+   }
+
+   header .row-4-container .slider-content-flex {
+      height: 62vh !important;
+   }
 }

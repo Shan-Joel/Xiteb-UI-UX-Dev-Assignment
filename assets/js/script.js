@@ -4,6 +4,8 @@ const dropdown = document.querySelector('.destination-dropdown');
 const otherDropdownValues = document.querySelector('.rest-of-the-options');
 const otherSelectedValue = document.querySelectorAll('.other-selected-value');
 const valueTxt = document.querySelector('.selected-value');
+const noticebar = document.querySelector('.row-3-container');
+const notice = document.querySelector('.fa-xmark');
 
 check.addEventListener('click', () => {
    icon.classList.toggle('display-check');
@@ -22,3 +24,7 @@ function show(userSelectedOption) {
    valueTxt.value = userSelectedOption;
    otherDropdownValues.classList.remove('dropdown-display-block');
 }
+
+notice.addEventListener('click', () => {
+   noticebar.style.display = 'none';
+});
