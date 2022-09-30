@@ -28,3 +28,11 @@ function show(userSelectedOption) {
 notice.addEventListener('click', () => {
    noticebar.style.display = 'none';
 });
+
+// mobile header
+const hamburger = document.querySelector('.fa-bars');
+const mobileDropdown = document.querySelector('.mobile-dropdown');
+
+hamburger.addEventListener('click', () => {
+   mobileDropdown.classList.toggle('display-mobile-dropdown');
+});
